@@ -1,7 +1,7 @@
 ---
 name: "\U0001F389 Init"
-about: Describe this issue template's purpose here.
-title: 초기 설정
+about: 초기 설정
+title: ''
 labels: "\U0001F389 init"
 assignees: an-sehyeon
 

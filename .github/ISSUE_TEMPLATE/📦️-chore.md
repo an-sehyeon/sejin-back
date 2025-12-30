@@ -1,7 +1,7 @@
 ---
 name: "\U0001F4E6️ Chore"
-about: Describe this issue template's purpose here.
-title: 패키지 매니저 수정, 환경설정, 그 외 사소한 수정
+about: 패키지 매니저 수정, 환경설정, 그 외 사소한 수정
+title: ''
 labels: "\U0001F4E6️ chore"
 assignees: an-sehyeon
 

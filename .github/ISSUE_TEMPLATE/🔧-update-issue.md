@@ -1,7 +1,7 @@
 ---
 name: "\U0001F527 UPDATE ISSUE"
-about: Describe this issue template's purpose here.
-title: 기존 기능 수정
+about: 기존 기능 수정
+title: ''
 labels: "\U0001F527 update"
 assignees: an-sehyeon
 

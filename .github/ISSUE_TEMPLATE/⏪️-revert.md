@@ -1,7 +1,7 @@
 ---
 name: "⏪️ Revert"
-about: Describe this issue template's purpose here.
-title: 이전 커밋/PR을 되돌릴 때 작성
+about: 이전 커밋/PR을 되돌릴 때 작성
+title: ''
 labels: "⏪️ revert"
 assignees: an-sehyeon
 

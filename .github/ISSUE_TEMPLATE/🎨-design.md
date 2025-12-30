@@ -1,7 +1,7 @@
 ---
 name: "\U0001F3A8 Design"
-about: Describe this issue template's purpose here.
-title: CSS/UI 디자인 변경
+about: CSS/UI 디자인 변경
+title: ''
 labels: "\U0001F3A8 design"
 assignees: an-sehyeon
 

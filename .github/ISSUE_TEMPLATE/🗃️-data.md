@@ -1,7 +1,7 @@
 ---
-name: Data
-about: Describe this issue template's purpose here.
-title: 데이터베이스 관련 변경 수행
+name: "\U0001F5C3️ Data"
+about: 데이터베이스 관련 변경 수행
+title: ''
 labels: "\U0001F5C3️ data"
 assignees: an-sehyeon
 

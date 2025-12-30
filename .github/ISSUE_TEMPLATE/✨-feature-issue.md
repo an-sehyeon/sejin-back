@@ -1,7 +1,7 @@
 ---
 name: "✨ FEATURE ISSUE"
-about: Describe this issue template's purpose here.
-title: 새로운 기능 추가
+about: 새로운 기능 추가
+title: ''
 labels: "✨ feat"
 assignees: an-sehyeon
 

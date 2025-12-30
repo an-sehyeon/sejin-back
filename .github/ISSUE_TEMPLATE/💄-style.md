@@ -1,7 +1,7 @@
 ---
-name: Style
-about: Describe this issue template's purpose here.
-title: 코드 포맷팅, 세미콜론 누락 등 기능 변화없는 코드 수정
+name: "\U0001F484 Style"
+about: 코드 포맷팅, 세미콜론 누락 등 기능 변화없는 코드 수정
+title: ''
 labels: "\U0001F484style"
 assignees: an-sehyeon
 

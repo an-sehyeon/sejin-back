@@ -1,7 +1,7 @@
 ---
 name: "♻️ Refactor"
-about: Describe this issue template's purpose here.
-title: 코드 리팩토링 (기능 변화 없음)
+about: 코드 리팩토링 (기능 변화 없음)
+title: ''
 labels: "♻️ refactor"
 assignees: an-sehyeon
 

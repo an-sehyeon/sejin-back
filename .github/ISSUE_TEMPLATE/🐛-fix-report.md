@@ -1,7 +1,7 @@
 ---
 name: "\U0001F41B Fix Report"
-about: Describe this issue template's purpose here.
-title: 버그 수정
+about: 버그 수정
+title: ''
 labels: "\U0001F41Bfix"
 assignees: an-sehyeon
 

@@ -1,7 +1,7 @@
 ---
 name: "\U0001F4DD Docs"
-about: Describe this issue template's purpose here.
-title: 문서, README, 주석 등 수정
+about: 문서, README, 주석 등 수정
+title: ''
 labels: "\U0001F4DD docs"
 assignees: an-sehyeon
 

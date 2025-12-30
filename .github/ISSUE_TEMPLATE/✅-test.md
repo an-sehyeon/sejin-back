@@ -1,7 +1,7 @@
 ---
 name: "✅ Test"
-about: Describe this issue template's purpose here.
-title: 테스트 코드 추가 / 테스트 관련 작업
+about: 테스트 코드 추가 / 테스트 관련 작업
+title: ''
 labels: "✅ test"
 assignees: an-sehyeon
 
