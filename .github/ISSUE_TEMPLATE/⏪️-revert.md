@@ -1,0 +1,27 @@
+---
+name: "⏪️ Revert"
+about: Describe this issue template's purpose here.
+title: 이전 커밋/PR을 되돌릴 때 작성
+labels: "⏪️ revert"
+assignees: an-sehyeon
+
+---
+
+## ⏪️ 변경 목적
+
+<!-- 어떤 커밋이나 PR을 되돌리는지 간단히 설명 -->
+
+-
+
+## ⏪️ 되돌리는 내용
+
+<!-- 되돌릴 파일/코드/기능 -->
+<!-- 관련 커밋/PR 링크 -->
+
+-
+
+## ⏪️ 참고 사항
+
+<!-- 되돌리기 이유, 주의할 점 -->
+
+-
