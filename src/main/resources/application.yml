@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sejin?serverTimezone=Asia/Seoul&useSSL=false&allowPublicKeyRetrieval=true
+    username: sejin_app
+    password: "비밀번호 입력"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate   
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
