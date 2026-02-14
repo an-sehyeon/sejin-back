@@ -110,10 +110,11 @@ public class JwtTokenProvider {
       parseSignedClaims(token)으로 서명된 토큰(일반적인 JWT)을 파싱함
     */
     private Claims parseClaims(String token) {
-        return Jwts.parser()
-                .verifyWith(signingKey)
+        return Jwts.parserBuilder()
+                .setSigningKey(signingKey)   // SecretKey 또는 byte[] 가능
                 .build()
-                .parseSignedClaims(token)
-                .getPayload();
+                .parseClaimsJws(token)       // 서명 검증 + Claims 파싱
+                .getBody();
     }
+
 }
