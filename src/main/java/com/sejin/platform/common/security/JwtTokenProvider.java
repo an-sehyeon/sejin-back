@@ -31,6 +31,13 @@ public class JwtTokenProvider {
 
     public JwtTokenProvider(JwtProperties jwtProperties) {
         this.jwtProperties = jwtProperties;
+        
+        // 설정 누락을 빠르게 확인하기 위한 코드 추가
+        if(jwtProperties.getSecret() == null || jwtProperties.getSecret().isBlank()) {
+        	throw new IllegalStateException(
+        			"JWT secret이 비었음. sejin.jwt.secret 설정 확인 바람"
+			);
+        }
 
         // 시크릿 문자열을 기반으로 서명 키를 생성
         // 키 길이가 너무 짧으면 예외가 날 수 있어서 운영에서는 충분히 길게 잡아야 함
