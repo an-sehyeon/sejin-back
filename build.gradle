@@ -25,38 +25,37 @@ repositories {
 }
 
 dependencies {
-    // JPA
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	// JPA
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
-    // Security
-    implementation 'org.springframework.boot:spring-boot-starter-security'
+	// Security
+	implementation 'org.springframework.boot:spring-boot-starter-security'
 
-    // WebMVC (Spring MVC + Tomcat + Jackson 포함)
-    implementation 'org.springframework.boot:spring-boot-starter-webmvc'
+	// Web (Jackson + 내장 톰캣 포함, webmvc보다 이 구성이 보통 안정적)
+	implementation 'org.springframework.boot:spring-boot-starter-web'
 
-    // MySQL
-    runtimeOnly 'com.mysql:mysql-connector-j'
+	// DB Driver
+	runtimeOnly 'com.mysql:mysql-connector-j'
 
-    // Lombok
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
-    testCompileOnly 'org.projectlombok:lombok'
-    testAnnotationProcessor 'org.projectlombok:lombok'
+	// JWT (jjwt) - io.jsonwebtoken import 에러 해결
+	implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+	runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
+	runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
 
-    // Devtools
-    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	// Jackson(ObjectMapper) - IDE에서 못 잡을 때 대비용(스타터에 포함되지만 명시)
+	implementation 'com.fasterxml.jackson.core:jackson-databind'
 
-    // Test
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'org.springframework.security:spring-security-test'
+	// Lombok
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
 
-    // JWT (JJWT)
-    implementation 'io.jsonwebtoken:jjwt-api:0.13.0'
-    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.13.0'
-    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.13.0'
+	// Devtools
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+	// Test
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
 }
-
-
 
 tasks.named('test') {
 	useJUnitPlatform()
