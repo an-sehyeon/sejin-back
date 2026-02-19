@@ -61,9 +61,19 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	
+	// Jakarta Validation
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	
 }
 
-tasks.named('test') {
-	useJUnitPlatform()
-}
+	tasks.named('test') {
+		useJUnitPlatform()
+	}
+	// 자바 컴파일 시 메서드 파라미터 이름을 유지하도록 설정
+	// 기본적으로 자바는 컴파일하면 파라미터 이름을 제거한다.
+	// 그래서 리플렉션으로 읽으면 arg0, arg1 이런 식으로 나온다.
+	// -parameters 옵션을 주면 실제 선언한 이름(name)을 바이트코드에 보존한다.
+	tasks.withType(JavaCompile) {
+	    options.compilerArgs += ["-parameters"]
+	
+	}
