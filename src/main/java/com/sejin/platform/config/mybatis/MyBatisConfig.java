@@ -13,7 +13,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 @Configuration
-@MapperScan("com.sejin.platform") // 매퍼 패키지 스캔 범위
+// @MapperScan("com.sejin.platform") // 매퍼 패키지 스캔 범위
 public class MyBatisConfig {
 
 	@Bean
